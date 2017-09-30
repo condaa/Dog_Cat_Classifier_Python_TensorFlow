@@ -179,9 +179,9 @@ class two_objects_dataset:
 
 
 #region test read next patch, make that from main class
-# for i in range(dataset.training_data_size//batch_size +3):
-#     imgs,lbls=dataset.get_next_training_batch()
-#     if i == 0 or i == dataset.training_data_size // batch_size:
+# for i in range(dataset.training_data_size//batch_size +3):          #3 or any num so exceeds one iteration
+#     imgs,lbls=dataset.get_next_training_batch()                     #test data after one full iteration
+#     if i == 0 or i == dataset.training_data_size // batch_size:     #are same? so it's faultless
 #         print(i,": ",lbls)
 #         print(i,": ",imgs[0].shape)
 #
